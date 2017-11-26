@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13529" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13507"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="apple_watch_loader_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <button width="1" alignment="left" hidden="YES" title="Start Loader" id="otb-ML-UNq">
+                            <connections>
+                                <action selector="tapStart" destination="AgC-eL-Hgc" id="46f-qD-9ii"/>
+                            </connections>
+                        </button>
+                        <group alignment="center" verticalAlignment="center" id="io9-Si-9Kc">
+                            <items>
+                                <imageView width="50" height="50" alignment="center" verticalAlignment="center" image="loader1" contentMode="scaleAspectFill" id="SdJ-OL-wtx">
+                                    <gestureRecognizers>
+                                        <tapGestureRecognizer id="54i-DJ-98s">
+                                            <connections>
+                                                <action selector="tapStop:" destination="AgC-eL-Hgc" id="rF0-zM-DaJ"/>
+                                            </connections>
+                                        </tapGestureRecognizer>
+                                    </gestureRecognizers>
+                                </imageView>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="button" destination="otb-ML-UNq" id="ZZ5-tL-hA4"/>
+                        <outlet property="loader" destination="SdJ-OL-wtx" id="I8S-gM-Bl8"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>
