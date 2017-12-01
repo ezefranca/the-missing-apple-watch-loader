@@ -2,7 +2,11 @@
 
 ![](https://media.giphy.com/media/l4Ep3igr1qTS1dkxa/giphy.gif)
 
-# 🐧
+# 🐧 How to use?
+
+Put a centralized ```WKInterfaceImage``` in your storyboard, create the ```@IBOutlet``` copy the images to the correct bundle and implement the ***start*** and ***stop*** loader.
+
+### Example
 
 ```swift
     @IBOutlet var loader: WKInterfaceImage!
